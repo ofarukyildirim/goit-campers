@@ -1,0 +1,47 @@
+.hero {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  min-height: calc(100vh - var(--header-height));
+  padding: 195px var(--container-padding) 0;
+  overflow: hidden;
+  color: var(--color-inputs);
+  background-color: #000;
+  isolation: isolate;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(rgb(0 0 0 / 0.2), rgb(0 0 0 / 0.2)),
+    url('../../assets/images/hero.jpg') center 62% / cover no-repeat;
+  transform: scale(-1.24, 1.24);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.17;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}

@@ -1,0 +1,82 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 88px;
+  padding-block: 64px;
+}
+
+.top {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  background-color: var(--color-inputs);
+  border-radius: var(--radius-m);
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.name,
+.price {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.location {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.description {
+  color: var(--color-text);
+}
+
+.bottom {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.bottom > :first-child {
+  flex: 1;
+  min-width: 0;
+}

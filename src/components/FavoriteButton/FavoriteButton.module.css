@@ -1,0 +1,13 @@
+.button {
+  display: inline-flex;
+  padding: 0;
+  color: var(--color-main);
+  background: none;
+  border: none;
+  transition: color var(--transition);
+}
+
+.button:hover,
+.active {
+  color: var(--color-error);
+}

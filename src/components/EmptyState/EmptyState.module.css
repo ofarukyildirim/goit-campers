@@ -1,0 +1,44 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  min-height: 840px;
+  padding: 24px;
+  text-align: center;
+  background-color: var(--color-inputs);
+  border-radius: var(--radius-m);
+}
+
+.illustration {
+  max-width: 100%;
+  height: auto;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.description {
+  font-weight: 500;
+}
+
+.line {
+  display: block;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding-bottom: 24px;
+}

@@ -1,0 +1,45 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  width: 638px;
+  flex-shrink: 0;
+}
+
+.main {
+  width: 638px;
+  height: 505px;
+  max-width: none;
+  object-fit: cover;
+  background-color: var(--color-badges);
+  border-radius: var(--radius-m);
+}
+
+.thumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.thumb {
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  background: none;
+  border: 3px solid transparent;
+  border-radius: var(--radius-m);
+  transition: border-color var(--transition);
+}
+
+.thumb img {
+  width: 129px;
+  height: 139px;
+  max-width: none;
+  object-fit: cover;
+  border-radius: 13px;
+}
+
+.thumb:hover,
+.active {
+  border-color: var(--color-button);
+}
